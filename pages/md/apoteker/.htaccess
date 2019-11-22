@@ -1,0 +1,33 @@
+
+ErrorDocument 404 http://localhost/ppdbv3/error/error404.php
+ErrorDocument 403 http://localhost/ppdbv3/error/error403.php
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteRule ^beranda  index.php?page=beranda [NC,L]
+
+RewriteRule ^laporan  index.php?page=laporan [NC,L]
+
+RewriteRule ^tambah index.php?page=tambah [NC,L]
+RewriteRule ^lihat  index.php?page=lihat [NC,L]
+RewriteRule ^diterima  index.php?page=diterima [NC,L]
+RewriteRule ^ditolak  index.php?page=ditolak [NC,L]
+RewriteRule ^belum-verifikasi index.php?page=belum-verifikasi [NC,L]
+RewriteRule ^detail-([0-9a-zA-Z_-]+) ro-detail-siswa.php?detail=$1 [NC,L]
+RewriteRule ^edit-([0-9a-zA-Z_-]+) ro-edit.php?edit=$1 [NC,L]
+RewriteRule ^nilai-([0-9a-zA-Z_-]+) ro-nilai.php?nilai=$1 [NC,L]
+RewriteRule ^detail-([0-9a-zA-Z_-]+) psb-detail.php?detail=$1 [NC,L]
+RewriteRule ^bukti-pendaftaran index.php?page=bukti-pendaftaran [NC,L]
+RewriteRule ^kartu-peserta index.php?page=kartu-peserta [NC,L]
+RewriteRule ^pengaturan-pendaftaran index.php?page=pengaturan-pendaftaran [NC,L]
+RewriteRule ^pengaturan-pengumuman index.php?page=pengaturan-pengumuman [NC,L]
+RewriteRule ^identitas-sekolah index.php?page=identitas-sekolah [NC,L]
+RewriteRule ^update-berhasil index.php?page=update-berhasil [NC,L]
+RewriteRule ^informasi index.php?page=informasi [NC,L]
+RewriteRule ^tampil index.php?page=tampil [NC,L]
+RewriteRule ^user index.php?page=user [NC,L]
+RewriteRule ^afadaxasadxaxasagrysf ro-backup.php [NC,L]
+RewriteRule ^login ro-login.php [NC,L]
+RewriteRule ^proses ro-login-proses.php [NC,L]
+RewriteRule ^logout ro-logout.php [NC,L]
+
+</IfModule>

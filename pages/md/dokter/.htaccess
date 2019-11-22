@@ -1,0 +1,3 @@
+Options All -Indexes
+ErrorDocument 404 http://localhost/ppdbv3/ro-error/error404.php
+ErrorDocument 403 http://localhost/ppdbv3/ro-error/error403.php
